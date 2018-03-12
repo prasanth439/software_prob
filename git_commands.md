@@ -9,5 +9,6 @@
 
 ## Commands for git
 
-git clone https://github.com/prasanth439/software_prob.git\s\s
-cd software_prob\s\s
++ git clone https://github.com/prasanth439/software_prob.git
++ cd software_prob
++ https://github.com/prasanth439/software_prob/invitations
