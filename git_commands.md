@@ -7,3 +7,7 @@
 4. sudo apt-get install mesa-common-dev
 5. sudo apt-get install libglu1-mesa-dev -y
 
+## Commands for git
+
+git clone https://github.com/prasanth439/software_prob.git\s\s
+cd software_prob\s\s
