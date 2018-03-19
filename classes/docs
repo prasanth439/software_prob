@@ -1,0 +1,14 @@
+glPushAttrib(GL_ENABLE_BIT); 
+# glPushAttrib is done to return everything to normal after drawing
+
+glLineStipple(1, 0xAAAA);  # [1]
+glEnable(GL_LINE_STIPPLE);
+glBegin(GL_LINES);
+glVertex3f(-.5,.5,-.5);
+glVertex3f(.5,.5,-.5);
+glEnd();
+
+glPopAttrib();
+
+=====================================================================================
+
