@@ -12,3 +12,5 @@
 + git clone https://github.com/prasanth439/software_prob.git
 + cd software_prob
 + https://github.com/prasanth439/software_prob/invitations
+
+### Install sublime
