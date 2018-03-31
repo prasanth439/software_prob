@@ -4,7 +4,9 @@
 #include<QMessageBox>
 #include<QCloseEvent>
 #include<QFileDialog>
+#include "openglwindow.h"
 #include<QFile>
+#include<fstream>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -30,6 +32,9 @@ void MainWindow::handle_clicks()
 
 void MainWindow::on_actionOpen_triggered()
 {
+    std::ifstream f;
+
+    int n;
     qDebug()<<"open is triggered";
     QString lab = ui->label->text();
     if(lab=="FrontView"){
@@ -47,6 +52,10 @@ void MainWindow::on_actionOpen_triggered()
     //QString file_nam = QFileDialog::getOpenFileName(this,"Open ..","/home/","All Files (*.*);;Text Files (*.txt)");
     //QFile file = Qfile
     //qDebug()<<file_nam<<" "<<lab;
+     std::string utf8_text = file_name_Front.toUtf8().constData();
+    f.open(utf8_text);
+    f>>n;
+    qDebug()<<n;
 }
 void MainWindow::on_actionExit_triggered(){
     QMessageBox::StandardButton reply = QMessageBox::question(this,"Exit Window","Are you sure?",QMessageBox::Yes|QMessageBox::No);
