@@ -8,3 +8,6 @@ The functional description of our project is present in this link
 ## Class Description
 The class description of our project is present in this link
 [Class Link](https://github.com/prasanth439/software_prob/tree/master/classes)
+# Reference
+1. Inspired from 
+[Link](http://www.bogotobogo.com/Qt/Qt5_OpenGL_QGLWidget.php)
