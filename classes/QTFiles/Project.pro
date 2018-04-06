@@ -12,7 +12,9 @@ HEADERS += mainwindow.h \
     openglwindow.h \
     ThreeD.h \
     vertex.h \
-    edge.h
+    edge.h \
+    scan3d.h \
+    twodtothreed.h
 FORMS += mainwindow.ui
 SOURCES += main.cpp mainwindow.cpp \
     openglwindow.cpp \

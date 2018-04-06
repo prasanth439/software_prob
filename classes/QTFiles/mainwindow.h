@@ -18,6 +18,7 @@ public:
 
 private slots:
     void handle_clicks();
+    void handle_compute();
     void closeEvent(QCloseEvent *event);
     void on_actionOpen_triggered();
     void on_actionExit_triggered();
